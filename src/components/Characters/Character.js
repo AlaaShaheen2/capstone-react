@@ -27,9 +27,7 @@ const Character = () => {
             <h4>Movies: </h4>
             {(!char.movies.length) ? (
               <p>
-                $
                 {char.name}
-                {' '}
                 do not have Movies.
               </p>
             )
@@ -44,10 +42,7 @@ const Character = () => {
             <h4>Tv Shows: </h4>
             {(!char.shows.length) ? (
               <p>
-                {' '}
-                $
                 {char.name}
-                {' '}
                 do not have TV Shows.
               </p>
             )
