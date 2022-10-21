@@ -16,7 +16,12 @@
 - **Redux**
 - **DisneyAPI**
 
-[Live Demo](https://https://space-travelers-alaa.netlify.app/)
+## Video Presentation
+
+[Click on the link to see the presentation](https://drive.google.com/)
+
+## Get Live Demo
+[Live Demo](https://disney-tribe.netlify.app/)
 
 ## Getting Started
 
