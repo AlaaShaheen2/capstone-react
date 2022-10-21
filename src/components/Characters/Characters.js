@@ -1,22 +1,23 @@
 import { Link } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { getData, charsFilter } from '../../redux/Characters/Characters';
 
 const Characters = () => {
   const displayChars = useSelector((state) => state.characters);
   const dispatch = useDispatch();
 
   useEffect(() => {
-    // if (!displayChars.length) dispatch(getData());
+    if (!displayChars.length) dispatch(getData());
   });
 
   const [searchItem, setSearchItem] = useState('');
 
   const handleSearch = (e) => {
     if (e.searchItem === '' || e.searchItem === ' ') {
-      // dispatch(getData().sort());
+      dispatch(getData().sort());
     }
-    // dispatch(charsFilter(searchItem));
+    dispatch(charsFilter(searchItem));
     setSearchItem(e.target.value);
   };
 
