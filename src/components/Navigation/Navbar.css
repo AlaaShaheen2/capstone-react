@@ -1,0 +1,21 @@
+.navbar {
+  background-color: #f73d84;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+
+.back a {
+  color: white;
+}
+
+.app-title {
+  font-weight: 600;
+  font-size: x-large;
+  text-align: center;
+}
+
+.app-icons {
+  gap: 10px;
+}

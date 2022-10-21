@@ -1,18 +1,19 @@
+import './Navbar.css';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { UilEstate, UilMicrophone, UilSetting } from '@iconscout/react-unicons';
 
 const Navbar = () => (
-  <nav className="navbar">
+  <nav className="navbar flex">
     <div className="back">
       <Link to="/">
         <UilEstate />
       </Link>
     </div>
     <div className="app-title">
-      Disney Tribe
+      <span>Disney Tribe</span>
     </div>
-    <div className="app-icons">
+    <div className="app-icons flex">
       <div className="mic">
         <UilMicrophone />
       </div>
