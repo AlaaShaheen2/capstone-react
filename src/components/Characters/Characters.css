@@ -1,3 +1,21 @@
 .flex {
   display: flex;
 }
+
+.input-container {
+  position: relative;
+  margin-bottom: 60px;
+}
+
+.input-container input{
+  position: absolute;
+  width: 80%;
+  left: 8%;
+  padding: 10px;
+  background-color: #f6a1c4;
+  border: 2px dashed #242123;
+}
+
+.cards-container {
+  columns: 2;
+}

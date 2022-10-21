@@ -27,8 +27,8 @@ const Character = () => {
             <h4>Movies: </h4>
             {(!char.movies.length) ? (
               <p>
-                {char.name}
-                do not have Movies.
+                {`${char.name} `}
+                does not have Movies.
               </p>
             )
               : char.movies.map((movie) => (
@@ -38,12 +38,12 @@ const Character = () => {
                 </li>
               ))}
           </ul>
-          <ul>
+          <ul className="tv-shows">
             <h4>Tv Shows: </h4>
             {(!char.shows.length) ? (
               <p>
-                {char.name}
-                do not have TV Shows.
+                {`${char.name} `}
+                does not have TV Shows.
               </p>
             )
               : char.shows.map((show) => <li key={index.legth * 5 + 1}>{show}</li>)}

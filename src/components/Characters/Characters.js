@@ -23,7 +23,7 @@ const Characters = () => {
   };
 
   return (
-    <>
+    <div className="container">
       <div className="input-container">
         <input
           type="text"
@@ -33,7 +33,7 @@ const Characters = () => {
         />
       </div>
 
-      <div className="container">
+      <div className="cards-container">
         {displayChars.sort().map((character, index) => (
           <div className={(index % 2 === 0) ? 'row-bg card' : 'card'} key={character.key}>
             <Link to={{ pathname: `/${character.id}` }} className="details-link">
@@ -48,7 +48,7 @@ const Characters = () => {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 

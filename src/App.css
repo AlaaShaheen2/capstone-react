@@ -5,6 +5,16 @@
   padding: 0;
 }
 
+.app {
+  background-color: #f6a1c4;
+  font-family: 'Lato', sans-serif;
+}
+
 .routrs-container {
-  padding: 0 30px;
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 0 auto;
 }

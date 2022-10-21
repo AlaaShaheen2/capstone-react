@@ -1,10 +1,9 @@
 .navbar {
-  background-color: #f6a1c4;
+  background-color: #ec4c8a;
   color: white;
   justify-content: space-between;
   align-items: center;
   padding: 10px 30px;
-  font-family: 'Lato', sans-serif;
 }
 
 .back a {
