@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="app">
       <Navbar />
-      <div className="container-fluid">
+      <div className="routrs-container">
         <Routes>
           <Route path="/" element={<Characters />} />
           <Route path="/:id" element={<Character />} />
