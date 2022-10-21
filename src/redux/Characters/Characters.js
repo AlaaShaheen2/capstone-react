@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const GET_DATA = 'DISNEY_TRIBE/srs/redux/FETCH_DATA';
+const GET_DATA = 'DISNEY_TRIBE/redux/FETCH_DATA';
 const FILTER = 'DISNEY_TRIBE/redux/FILTER';
 
 const url = 'https://api.disneyapi.dev/characters';
