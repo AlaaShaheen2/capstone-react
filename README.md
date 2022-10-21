@@ -18,7 +18,7 @@
 
 ## Video Presentation
 
-[Click on the link to see the presentation](https://drive.google.com/)
+[Click on the link to see the presentation](https://drive.google.com/file/d/1kIy0Z1Xg9J531IF44gczaPHVIkliOEuA/view?usp=sharing)
 
 ## Get Live Demo
 [Live Demo](https://disney-tribe.netlify.app/)
