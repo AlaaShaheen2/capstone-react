@@ -1,0 +1,22 @@
+.navbar {
+  background-color: #f6a1c4;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  font-family: 'Lato', sans-serif;
+}
+
+.back a {
+  color: white;
+}
+
+.app-title {
+  font-weight: 600;
+  font-size: x-large;
+  text-align: center;
+}
+
+.app-icons {
+  gap: 10px;
+}
