@@ -1,3 +1,4 @@
+import './Character.css';
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
@@ -8,23 +9,23 @@ const Character = () => {
   const charInfo = info.filter((char) => +char.id === +character.id);
 
   return (
-    <div className="info-container">
+    <div className="info-container flex">
       {charInfo.map((char, index) => (
-        <div className="info" key={index.legth * 5 + 1}>
-          <div className="char-img">
-            <img src={char.image} alt={char.name} />
-          </div>
-          <div className="char-name">
-            <h4>
-              <span>Name:</span>
-              {'  '}
-              {(char.name[0] === '.' || char.name[0] === "'")
-                ? char.name.replace(/[.']/g, '')
-                : char.name}
-            </h4>
+        <div className="info flex" key={index.legth * 5 + 1}>
+          <div className="info-top flex">
+            <div className="char-img">
+              <img src={char.image} alt={char.name} className="char-img" />
+            </div>
+            <div className="char-name">
+              <p>
+                {(char.name[0] === '.' || char.name[0] === "'")
+                  ? char.name.replace(/[.']/g, '')
+                  : char.name}
+              </p>
+            </div>
           </div>
           <ul className="char-movies">
-            <h4>Movies: </h4>
+            <p>Movies: </p>
             {(!char.movies.length) ? (
               <p>
                 {`${char.name} `}
@@ -39,7 +40,7 @@ const Character = () => {
               ))}
           </ul>
           <ul className="tv-shows">
-            <h4>Tv Shows: </h4>
+            <p>Tv Shows: </p>
             {(!char.shows.length) ? (
               <p>
                 {`${char.name} `}

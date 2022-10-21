@@ -1,0 +1,36 @@
+.info-container {
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.info {
+  flex-direction: column;
+  width: 100%;
+}
+
+.info-top {
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.char-img {
+  border-radius: 50%;
+}
+
+.char-name p {
+  font-weight: 600;
+  font-size: xx-large;
+}
+
+.info ul {
+  background-color: #cf4277;
+  width: 100%;
+  margin-left: auto;
+  padding: 10px;
+}
+
+.info ul:nth-child(2n) {
+  background-color: #ea4a88;
+}
