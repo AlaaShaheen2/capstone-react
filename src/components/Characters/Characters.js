@@ -35,15 +35,16 @@ const Characters = () => {
 
       <div className="cards-container">
         {displayChars.sort().map((character, index) => (
-          <div className={(index % 2 === 0) ? 'row-bg card' : 'card'} key={character.key}>
-            <Link to={{ pathname: `/${character.id}` }} className="details-link">
-              <img className="character-img" src={character.image} alt={character.name} />
-              {' '}
-              <h3 className="character-name">
+          <div className={(index % 2 === 1) ? 'odd-bg card' : 'card'} key={character.key}>
+            <Link to={{ pathname: `/${character.id}` }} className="info-link">
+              <div className="card-img">
+                <img className="character-img" src={character.image} alt={character.name} />
+              </div>
+              <p className="character-name">
                 {(character.name[0] === '.' || character.name[0] === "'")
                   ? character.name.replace(/[.']/g, '')
-                  : character.name}
-              </h3>
+                  : character.name.substring(0, 23)}
+              </p>
             </Link>
           </div>
         ))}

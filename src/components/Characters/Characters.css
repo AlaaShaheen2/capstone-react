@@ -4,18 +4,62 @@
 
 .input-container {
   position: relative;
+  padding-top: 20px;
   margin-bottom: 60px;
 }
 
-.input-container input{
+.input-container input {
   position: absolute;
   width: 80%;
-  left: 8%;
+  left: 7%;
   padding: 10px;
-  background-color: #f6a1c4;
-  border: 2px dashed #242123;
+  background-color: #fd5294;
+  border: 2px dashed #fff;
+  color: #fff;
+}
+
+input::placeholder {
+  color: #fff;
+}
+
+.input-container input:focus {
+  border: 2px solid #fff;
+  outline: none;
 }
 
 .cards-container {
   columns: 2;
+  gap: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.card {
+  background-color: #f73d84;
+  padding: 15px 0;
+}
+
+.odd-bg {
+  background-color: #ce4176;
+}
+
+.info-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+img.character-img {
+  height: 120px;
+  width: 120px;
+  margin-left: auto;
+  border-radius: 50%;
+}
+
+.character-name {
+  color: #fff;
+  font-weight: 400;
+  font-size: large;
 }

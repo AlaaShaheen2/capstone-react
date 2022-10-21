@@ -6,15 +6,12 @@
 }
 
 .app {
-  background-color: #f6a1c4;
+  background-color: #fd5294;
   font-family: 'Lato', sans-serif;
+  color: #fff;
 }
 
 .routrs-container {
-  padding: 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   box-sizing: border-box;
-  margin: 0 auto;
+  min-height: 100vh;
 }
