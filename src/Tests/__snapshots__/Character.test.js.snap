@@ -6,13 +6,13 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="info-container"
+        class="info-container flex"
       />
     </div>
   </body>,
   "container": <div>
     <div
-      class="info-container"
+      class="info-container flex"
     />
   </div>,
   "debug": [Function],

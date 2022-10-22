@@ -6,6 +6,28 @@ Object {
   "baseElement": <body>
     <div>
       <div
+        class="container"
+      >
+        <div
+          class="input-container"
+        >
+          <input
+            placeholder="Filter..."
+            type="text"
+            value=""
+          />
+        </div>
+        <div
+          class="cards-container"
+        />
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="container"
+    >
+      <div
         class="input-container"
       >
         <input
@@ -15,23 +37,9 @@ Object {
         />
       </div>
       <div
-        class="container"
+        class="cards-container"
       />
     </div>
-  </body>,
-  "container": <div>
-    <div
-      class="input-container"
-    >
-      <input
-        placeholder="Filter..."
-        type="text"
-        value=""
-      />
-    </div>
-    <div
-      class="container"
-    />
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
