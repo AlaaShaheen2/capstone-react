@@ -1,17 +1,17 @@
-import { render } from '@testing-library/react';
 import React from 'react';
+import { render } from '@testing-library/react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
-import App from './App';
-import store from './redux/configureStore';
+import Character from '../components/Characters/Character';
+import store from '../redux/configureStore';
 
-describe('Testing Characters:', () => {
-  it('Should render all characters', () => {
+describe('Testing Character:', () => {
+  it('Should render individual character information', () => {
     const tree = render(
       <React.StrictMode>
         <Provider store={store}>
           <Router>
-            <App />
+            <Character />
           </Router>
         </Provider>
       </React.StrictMode>,
